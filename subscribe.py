@@ -18,13 +18,13 @@ mqttc.on_connect = on_connect                               # Assign on_connect 
 mqttc.on_message = on_message                               # Assign on_message function
 
 #### Change following parameters #### 
-awshost = "a2rvthmp83bq7x-ats.iot.ap-south-1.amazonaws.com" # Updated Endpoint
-awsport = 8883                                              # Port number
-clientId = "MLC_NEW_Client"                                 # Thing Name
-thingName = "MLC_NEW_Client"                                # Thing Name
-caPath = "/home/maintwiz/Downloads/AmazonRootCA1.pem"       # Updated Root CA Certificate
-certPath = "/home/maintwiz/Downloads/546afbc27b03f066d1bfbbaca27dc36c3cce20b629cef85e74308ce8c9a9eed5-certificate.pem.crt" # Updated Certificate
-keyPath = "/home/maintwiz/Downloads/546afbc27b03f066d1bfbbaca27dc36c3cce20b629cef85e74308ce8c9a9eed5-private.pem.key"      # Updated Private Key
+awshost = "XXXXXXXXXamazonaws.com"  # Endpoint
+awsport = 8883                                              # Port no.
+clientId = "MLC_NEW_Client"                                 # Thing_Name
+thingName = "MLC_NEW_Client"                                # Thing_Name
+caPath = "/home/maintwiz/Downloads/AmazonRootCA1.pem"       # Root_CA_Certificate_Name
+certPath = "/home/maintwiz/Downloads/XXXXXXXX-certificate.pem.crt"  # <Thing_Name>.cert.pem
+keyPath = "/home/maintwiz/Downloads/XXXXXXX-private.pem.key"      # <Thing_Name>.private.key
 
 mqttc.tls_set(caPath, certfile=certPath, keyfile=keyPath, cert_reqs=ssl.CERT_REQUIRED, tls_version=ssl.PROTOCOL_TLSv1_2, ciphers=None)
 
