@@ -22,9 +22,9 @@ awshost = "XXXXXXXXXamazonaws.com"  # Endpoint
 awsport = 8883                                              # Port no.
 clientId = "MLC_NEW_Client"                                 # Thing_Name
 thingName = "MLC_NEW_Client"                                # Thing_Name
-caPath = "/home/maintwiz/Downloads/AmazonRootCA1.pem"       # Root_CA_Certificate_Name
-certPath = "/home/maintwiz/Downloads/XXXXXXXX-certificate.pem.crt"  # <Thing_Name>.cert.pem
-keyPath = "/home/maintwiz/Downloads/XXXXXXX-private.pem.key"      # <Thing_Name>.private.key
+caPath = "/home/MLC/Downloads/AmazonRootCA1.pem"       # Root_CA_Certificate_Name
+certPath = "/home/MLC/Downloads/XXXXXXXX-certificate.pem.crt"  # <Thing_Name>.cert.pem
+keyPath = "/home/MLC/Downloads/XXXXXXX-private.pem.key"      # <Thing_Name>.private.key
 
 mqttc.tls_set(caPath, certfile=certPath, keyfile=keyPath, cert_reqs=ssl.CERT_REQUIRED, tls_version=ssl.PROTOCOL_TLSv1_2, ciphers=None)
 
